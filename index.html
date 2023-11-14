@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Assets/style.css">
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div class="details-student">
+    <h1>Student Details</h1>
+      <!-- Form to add student details -->
+      <form id="studentForm">
+        <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your Name"
+        pattern="[a-zA-Z ]+"
+        required
+      />
+  
+      <input
+        type="number"
+        id="ageInput"
+        placeholder="Enter your AGE"
+        pattern="\d+"
+        required
+      />
+  
+      <input
+        type="text"
+        id="departmentInput"
+        placeholder="DEPARTMENT"
+        pattern="[a-zA-Z ]+"
+        required
+      />
+  
+      <input
+        type="number"
+        id="marksInput"
+        placeholder="TOTAL MARKS"
+        pattern="\d+"
+        required
+      />
+  
+      <i class="fa-solid fa-equals fa-xl"></i>
+  
+      <div>
+        <button type="submit">  <i class="fa-solid fa-plus"></i> &nbsp; <span class="btn-text">Add Student</span></i></button>
+      </div>
+      </form>
+  
+      <!-- Creating a table to display the student details -->
+      <table id="studentTable" border="2">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Total Marks</th>
+          </tr>
+        </thead>
+        <tbody id="studentData"></tbody>
+      </table>
+
+      <input type="text" id="searchInput" placeholder="Type to search" />
+
+      <div class="sort-section">
+        <div style="text-align: center">
+
+          <select id="sortField">
+            <option value="" disabled selected>Sorting options</option>
+            <option value="name">Name</option>
+            <option value="age">Age</option>
+            <option value="department">Department</option>
+            <option value="totalMarks">Total Marks</option>
+          </select>
+        </div>
+
+        <div style="text-align: center">
+          <label for="marksFilter"></label><br />
+          <input type="number" id="marksFilter" placeholder="Filter by marks" />
+          <button onclick="filterStudents()"><i class="fa-solid fa-filter" style="color: black;"></i></button>
+        </div>
+      </div>
+    </div>
+ </div>
+<script src="main.js"></script>
+</body>
+</html>

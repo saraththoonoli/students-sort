@@ -1,0 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(152, 157, 168);
+  width: 100%;
+}
+
+.details-student h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.details-student #studentForm {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.details-student #studentForm input {
+  width: 200px;
+  height: 35px;
+  color: gray;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+.details-student #studentForm button {
+  padding: 8px 8px 8px 8px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: rgb(122, 122, 210);
+  font-size: 15px;
+  cursor: pointer;
+}
+.details-student #studentForm button :hover {
+  color: red;
+  font-size: 16px;
+}
+
+#studentTable {
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  width: 400px;
+  height: 250px;
+  text-align: center;
+  padding: 5px;
+  color: black;
+  border-color: #443f3f;
+}
+
+.sort-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sort-section #sortField,
+.sort-section input {
+  width: 200px;
+  height: 35px;
+  color: gray;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+.sort-section button {
+  padding: 8px 8px 8px 8px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: rgb(122, 122, 210);
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#searchInput {
+  width: 400px;
+  height: 45px;
+  color: gray;
+  border-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=style.css.map */
